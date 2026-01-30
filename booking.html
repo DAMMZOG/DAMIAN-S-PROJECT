@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <meta charset="UTF-8">
+        <title>Lochquarry Outdoor Center</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="fonts.googleapis.com" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        
+    </head>
+    <body>
+        <!--NAV BAR-->
+        <header class="hero">
+            <img src="LOCHQUARRY.svg" alt="logo" class="hero-logo">
+
+            <nav class="hero-nav">
+                <a href="index.html">Home</a>
+                <a href="Activities.html">Activities</a>
+                <a href="customer-feedback.html">Customer Feedback</a>
+                <a href="about-us.html">About Us</a>
+                <a href="booking.html" class="btn">Request Booking</a>
+            </nav>
+        </header>
+        <!--NAVBAR ENDS-->
+        
+
+            <img src="Beach1.jpg" class="beach" alt="picture of a beautiful Beach">
+
+            <h1 class="home-h1">Want to visit Lochquarry Outdoor Center? Make a request now</h1>
+            <p class="feedback-p">Fill out this form to make a booking request.</p>
+            <form class="request-form" action="request-submit.html" method="POST">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" placeholder="Your Name" required>
+
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" placeholder="Surname" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Email address" required>
+
+                <label for="messages">Your Request</label>
+                <textarea id="messages" placeholder="Write your message"></textarea>
+
+                <button type="button" class="submit-btn" onclick="showMessage()">Submit Request</button>
+                <p id="thankyou-message"  style="display: none; color: #1B4332; font-size: 24px; margin-top: 20px;">
+                    Thank you for your Request!
+                </p>
+            </form>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143247.24770853107!2d-4.3254020343011!3d55.87588180790628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488845944b255e79%3A0x7c700b07e83071e3!2sGlasgow%20Clyde%20College%20-%20Anniesland%20Campus!5e0!3m2!1sen!2suk!4v1769720612299!5m2!1sen!2suk"
+                width="100%" 
+                height="450"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <p class="review-p">‘The Scouts loved every second of it, especially the powerboating’ − Martin Bainbridge, Scout Leader</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--FOOTER HERE-->
+        <footer class="hero-footer"> 
+            <div class="footer-top">
+                <div class="logo">
+                    <a href="index.html"><img src="LOCHQUARRY.svg" alt="logo" class="footer-logo"></a>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <p>+447123456789</p>
+                        <p>info@lochquarry.co.uk</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul class="no-bullets">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Activities.html">Activities</a></li>
+                            <li><a href="customer-feedback.html">Customer Feedback</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="booking.html">Booking Request</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Useful Links</h4>
+                        <ul class="no-bullets">
+                            <li><a href="burner.html">Terms & Conditions</a></li>
+                            <li><a href="burner.html">Privacy</a></li>
+                            <li><a href="burner.html">FAQ's</a></li>
+                        </ul>
+
+                        <div class="footer-social">
+                            <a href="https://facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://tiktok.com" target="blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                
+                <div class="footer-copyright">
+                    <p>© 2026 Lochquarry Outdoor Center</p>
+                </div>
+            </div>    
+        </footer>
+
+        <script>
+        function showMessage(){
+            document.getElementById("thankyou-message").style.display = "block";
+        }
+    </script>
+    </body>
+</html>
